@@ -168,6 +168,7 @@ img {
 
 .navigation-list-link {
   color: var(--main-colorFont);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link-agency {
@@ -177,6 +178,7 @@ img {
 .header-address-mail,
 .header-address-phone {
   color: var(--second-colorFont);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link:hover,
@@ -364,6 +366,8 @@ img {
   fill: var(--icon-color);
   background-color: var(--light-bgc);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -404,6 +408,8 @@ img {
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
@@ -435,10 +441,12 @@ img {
 
 .footer-address-maps {
   color: var(--third-colorFont);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address-mail,
 .footer-address-phone {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address-maps:hover,
@@ -458,6 +466,8 @@ img {
 .footer .social-list-link {
   fill: var(--light-bgc);
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-list-link:hover,
@@ -500,6 +510,8 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -521,6 +533,7 @@ img {
 .portfolio-list-item {
   margin-bottom: 30px;
   background: var(--light-bgc);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover,
