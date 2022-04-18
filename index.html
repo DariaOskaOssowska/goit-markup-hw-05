@@ -60,7 +60,7 @@
         <section class="hero-up-side">
             <div class="container">
                 <h1 class="hero-main-header">efektywne rozwiązania dla waszego biznesu</h1>
-                <button class="modal-btn" type="button">Zamów usługę</button>
+                <button class="modal-btn" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </section>
 
@@ -390,6 +390,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- OKNO MODALNE -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn-close" data-modal-close>
+                <svg class="close-btn" width="11" height="11">
+                    <use href="./images/svg/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <!-- Skrypt Java Script - Otwieranie/zamykanie okna modalnego -->
     <script src="./js/modal.js"></script>
 </body>

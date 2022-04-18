@@ -517,6 +517,65 @@ img {
 
 /* ========  END FOOTER ========= */
 
+/* =========  BACKDROP ========== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background: var(--light-bgc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+.is-hidden .modal {
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  opacity: 0;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--light-bgc);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+/* =======  END BACKDROP ======== */
+
 /* =========  PORTFOLIO ========= */
 .portfolio-view .container {
   display: flex;
